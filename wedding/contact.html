@@ -1,0 +1,98 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+   <meta name="viewport" content="width=device-width , initial-scale=0.5">
+  <meta http-equiv="X-UA-Compatible" content="ie=edge">
+  <title>Mark and Shelley photography | Home </title>
+  <link rel="stylesheet" href="css/form.css">
+  <link rel="stylesheet" href="css/style.css">
+  <link rel="stylesheet" href="css/sidebar.css">
+  
+</head>
+<body>
+  <nav class="navbar">
+    <span class="open-slide">
+      <a href="#" onclick="openSlideMenu()">
+        <svg width="30" height="30">
+            <path d="M0,5 30,5" stroke="#fff" stroke-width="5"/>
+            <path d="M0,14 30,14" stroke="#fff" stroke-width="5"/>
+            <path d="M0,23 30,23" stroke="#fff" stroke-width="5"/>
+        </svg>
+      </a>
+    </span>
+  </nav>
+
+  <div id="side-menu" class="side-nav">
+    <a href="#" class="btn-close" onclick="closeSlideMenu()">&times;</a>
+    <a href="index.html">Home</a>
+    <a href="about.html">About</a>
+    <a href="services.html">Services</a>
+    <a href="contact.html">Contact</a>
+  </div>
+
+  <script>
+    function openSlideMenu(){
+      document.getElementById('side-menu').style.width = '250px';
+      document.getElementById('main').style.marginLeft = '250px';
+    }
+
+    function closeSlideMenu(){
+      document.getElementById('side-menu').style.width = '0';
+      document.getElementById('main').style.marginLeft = '0';
+    }
+  </script>
+
+  <div class="pimg6">
+    <div class="ptext">
+      <span class="border">
+        Mark and Shelley Photography
+       </span>
+    </div>
+  </div>
+
+  <section class="section section-light">
+    <h3>Mark and Shelley Photography</h3>
+        <ul>
+          <li><i class="fa fa-phone"></i><a href="tel:614-600-0168">(614) 600-0168</a></li>
+          <li><i class="fa fa-envelope"></i> <a href="mailto:markandshellyphotography@gmail.com">markandshellyphotography@gmail.com</a></li>
+        </ul>
+      </div>
+      <div class="contact">
+        <h3>Email Us</h3>
+        <form>
+          <p>
+            <label>First Name</label>
+            <input type="text" name="first name">
+          </p>
+          <p>
+            <label>Last Name</label>
+            <input type="text" name="last name">
+          </p>
+          <p>
+            <label>Email Address</label>
+            <input type="email" name="email">
+          </p>
+          <p>
+            <label>Phone Number</label>
+            <input type="text" name="phone">
+          </p>
+          <p class="full">
+            <label>Message</label>
+            <textarea name="message" rows="5"></textarea>
+          </p>
+          <p class="full" class="submit">
+            <button>Submit</button>
+          </p>
+        </form>
+      </div>
+    </section>
+  <footer>
+    <div class="copyright">
+         &copy Mark and Shelley Photography 2018
+    </div>
+	</footer>
+</body>
+</html>
+
+

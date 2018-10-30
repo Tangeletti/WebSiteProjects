@@ -1,0 +1,69 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+   <meta name="viewport" content="width=device-width , initial-scale=0.5">
+  <meta http-equiv="X-UA-Compatible" content="ie=edge">
+  <title>Mark and Shelley photography | Home </title>
+  <link rel="stylesheet" href="css/style.css">
+  <link rel="stylesheet" href="css/sidebar.css">
+  
+</head>
+<body>
+  <nav class="navbar">
+    <span class="open-slide">
+      <a href="#" onclick="openSlideMenu()">
+        <svg width="30" height="30">
+            <path d="M0,5 30,5" stroke="#fff" stroke-width="5"/>
+            <path d="M0,14 30,14" stroke="#fff" stroke-width="5"/>
+            <path d="M0,23 30,23" stroke="#fff" stroke-width="5"/>
+        </svg>
+      </a>
+    </span>
+  </nav>
+
+  <div id="side-menu" class="side-nav">
+    <a href="#" class="btn-close" onclick="closeSlideMenu()">&times;</a>
+    <a href="index.html">Home</a>
+    <a href="about.html">About</a>
+    <a href="services.html">Services</a>
+    <a href="contact.html">Contact</a>
+  </div>
+
+  <script>
+    function openSlideMenu(){
+      document.getElementById('side-menu').style.width = '250px';
+      document.getElementById('main').style.marginLeft = '250px';
+    }
+
+    function closeSlideMenu(){
+      document.getElementById('side-menu').style.width = '0';
+      document.getElementById('main').style.marginLeft = '0';
+    }
+  </script>
+
+  <div class="pimg4">
+    <div class="ptext">
+      <span class="border">
+        Mark and Shelley Photography
+       </span>
+    </div>
+  </div>
+
+  <section class="section section-light">
+    <h2>About Us</h2>
+    <p>
+There is nothing more rewarding than working closely with our clients who have complete trust in our photographic ability. We look for the unexpected, the surprises and emotions that encompasses the entire day. It is an honor and a pleasure to be apart of our client's lives during that special time. We will capture the moments that will last forever.
+<br>
+Our motto is "sharing what we see" and we promise to do exactly that in the highest and most professional way.
+<br>
+​- Mark and Shelly
+  </section>
+  <footer>
+    <div class="copyright">
+         &copy Mark and Shelley Photography 2018
+    </div>
+	</footer>
+</body>
+</html>
+

@@ -1,0 +1,86 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+   <meta name="viewport" content="width=device-width , initial-scale=0.5">
+  <meta http-equiv="X-UA-Compatible" content="ie=edge">
+  <meta name="descripton" content=" Affordable web degsign and Marketing">
+  <meta name="keywords" content="web degsign, marketing, Affordable, growth hacking, social medaia">
+  <meta name="author" content="Ataraxia Technologies">
+  <title>Ataraxia Technolgies | Marketing  </title>
+  <link rel="stylesheet" href="css/marketing.css">
+  <link href="https://maxcdn.bootstrapcdn.com/font-awesome/4.7.0/css/font-awesome.min.css" rel="stylesheet">
+  <link rel="stylesheet" type="text/css" href="css/buttons.css">
+  <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.2.1/jquery.min.js"></script>
+  <script src="js/typed.js" type="text/javascript"></script>
+</head>
+<body>
+  <nav class="navbar">
+    <span class="open-slide">
+      <a href="#" onclick="openSlideMenu()">
+        <svg width="30" height="30">
+            <path d="M0,5 30,5" stroke="#fff" stroke-width="5"/>
+            <path d="M0,14 30,14" stroke="#fff" stroke-width="5"/>
+            <path d="M0,23 30,23" stroke="#fff" stroke-width="5"/>
+        </svg>
+      </a>
+    </span>
+  </nav>
+
+  <div id="side-menu" class="side-nav">
+    <a href="#" class="btn-close" onclick="closeSlideMenu()">&times;</a>
+    <a href="code.html">Web Design</a>
+    <a href="Marketing.html">Marketing</a>
+    <a href="contact.html">Contact</a>
+  </div>
+
+  <script>
+    function openSlideMenu(){
+      document.getElementById('side-menu').style.width = '250px';
+      document.getElementById('main').style.marginLeft = '250px';
+    }
+
+    function closeSlideMenu(){
+      document.getElementById('side-menu').style.width = '0';
+      document.getElementById('main').style.marginLeft = '0';
+    }
+  </script>
+
+  <div class="pimg5">
+   
+  <div id="center">
+    <div id="typed-strings">
+    <p>Let's do that marketing..</p>
+</div>
+<span id="typed"></span>
+
+  <script type="text/javascript">
+  var typed = new Typed('#typed', {
+    stringsElement: '#typed-strings',
+    typeSpeed: 50,
+    backSpeed: 50,  
+  });
+
+function show(){
+if(document.layers) document.layers['mydiv'].visibility="show";
+if(document.getElementById) document.getElementById("mydiv").style.visibility="visible";
+if(document.all) document.all.mydiv.style.visibility="visible";
+}
+  
+</script>
+
+</div>
+</div>
+  <section class="section section-light">
+<p>
+Do you have an amazing service or product, but no one to show it to? Lets us help! We help several clients stand out from the crowd and get their voices heard.. there's a lot of static out there nowadays,  break through  contact us today for a free consultation!
+​</p>
+  </section>
+  <footer>
+    <div class="copyright">
+         &copy Ataraxia Technologies 2018
+    </div>
+	</footer>
+</body>
+</html>
+

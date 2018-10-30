@@ -1,0 +1,196 @@
+body, html{
+  height:100%;
+  margin:0;
+  font-size:20px;
+ font-family: 'Franklin Gothic Medium', 'Arial Narrow', Arial, sans-serif;
+  font-weight:400;
+  line-height:1.8em;
+  color:#666;
+}
+
+.pimg2 , .pimg3 , .pimg4{
+  position:relative;
+  opacity:0.70;
+  background-position:center;
+  background-size:cover;
+  background-repeat:no-repeat;
+
+  /*
+    fixed = parallax
+    scroll = normal
+  */
+  background-attachment:fixed;
+}
+
+/*This is for the picture in the services page */
+
+.pimg4{
+  background-image:url('../img/image4.jpeg');
+  min-height:85%;
+  }
+
+
+.pimg2{
+  background-image:url('../img/image2.jpeg');
+  min-height:85%;
+  }
+
+  .pimg3{
+  background-image:url('../img/image3.jpeg');
+  min-height:85%;
+  }
+/*This is for the picture in the contact page */
+
+
+.section{
+  text-align:center;
+  padding:50px 80px;
+}
+
+.section-light{
+  background-color:#f4f4f4;
+  color:#666;
+}
+
+.section-dark{
+  background-color:#282e34;
+  color:#ddd;
+}
+
+
+.form {
+  display: block;
+}
+/* this is for the navbar */
+
+.navbar{
+  background-color:rgba(43, 43, 43, 0.8);
+  overflow:hidden;
+  height:63px;
+}
+
+
+.navbar a{
+  background-color:rgba(43, 43, 43, 0.8);
+  float:left;
+  display:block;
+  color:#f2f2f2;
+  text-align:center;
+  padding:14px 16px;
+  text-decoration:none;
+  font-size:17px;
+}
+
+.navbar ul{
+  margin:8px 0 0 0;
+  list-style:none;
+}
+
+.navbar a:hover{
+   background-color:rgba(43, 43, 43, 0.8);
+  color:#000;
+}
+
+.side-nav{
+  height:100%;
+  width:0;
+  position:fixed;
+  z-index:1;
+  top:0;
+  left:0;
+ background-color:rgba(43, 43, 43, 0.8);
+  opacity:0.9;
+  overflow-x:hidden;
+  padding-top:60px;
+  transition:0.5s;
+}
+
+.side-nav a{
+  padding:10px 10px 10px 30px;
+  text-decoration:none;
+  font-size:22px;
+  color:#ccc;
+  display:block;
+  transition:0.3s;
+}
+
+.side-nav a:hover{
+  color:#fff;
+}
+
+.side-nav .btn-close{
+  position:absolute;
+  top:0;
+  right:22px;
+  font-size:36px;
+  margin-left:50px;
+}
+
+#main{
+  transition:margin-left 0.5s;
+  padding:20px;
+  overflow:hidden;
+  width:100%;
+}
+
+#center {
+  position: absolute;
+  top: 50%;
+  left: 0;
+  transform: translate(0, -50%);
+  text-align: center;
+  width: 100%;
+  font-family: 'Franklin Gothic Medium', 'Arial Narrow', Arial, sans-serif;
+  font-size: 48px;
+  color:rgba(233, 39, 39, 1.0);
+}
+
+
+/* Media*/
+@media(min-width:700px){
+  .wrapper{
+    display: grid;
+    grid-template-columns: 1fr 2fr;
+  }
+
+  @media(max-width:568px){
+  .pimg5{
+    background-attachment:scroll;
+  }
+}
+
+
+/* this is for the blinking cursor */
+     .typed-cursor{
+    opacity: 1;
+    -webkit-animation: blink 0.7s infinite;
+    -moz-animation: blink 0.7s infinite;
+    animation: blink 0.7s infinite;
+    }
+    @keyframes blink{
+    0% { opacity:1; }
+    50% { opacity:0; }
+    100% { opacity:1; }
+    }
+    @-webkit-keyframes blink{
+    0% { opacity:1; }
+    50% { opacity:0; }
+    100% { opacity:1; }
+    }
+    @-moz-keyframes blink{
+    0% { opacity:1; }
+    50% { opacity:0; }
+    1
+}
+
+
+.copyright {
+  background-color:rgba(223, 39, 39, 0.7);
+  top:75%;
+  width:100%;
+  text-align:center;
+  color:#fff;
+  font-size:17px;
+  padding:8px;
+  opacity:1;
+}
